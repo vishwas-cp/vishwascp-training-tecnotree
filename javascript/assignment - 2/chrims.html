@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+const today = new Date();
+
+const currentYear = today.getFullYear();
+
+const christmasDate = new Date(currentYear, 11, 25);
+
+if (today > christmasDate) {
+  christmasDate.setFullYear(currentYear + 1);
+}
+
+const timeDiff = christmasDate.getTime() - today.getTime();
+
+const daysLeft = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+
+alert(`There are ${daysLeft} days left until Christmas!`);
+
+    </script>
+</body>
+</html>

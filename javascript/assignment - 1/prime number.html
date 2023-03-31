@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My JavaScript Program</title>
+  </head>
+  <body>
+    <h3>Hello, Vishwas</h3>
+    <script>
+      //let message = "Hello, welcome to JavaScript Training";
+      let a=10
+      //let b=20
+    //   alert(a>b);
+    //   alert(a<b)
+    //   alert(a==b)
+    //   alert(b!==a)
+    // if(a%2==0){
+    //     alert("Even")
+    // }
+    // else
+    // {
+    //     alert("Odd")
+    // }
+
+const num = 2;
+
+let isPrime = true;
+if (num <= 1) {
+  isPrime = false;
+} else {
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      isPrime = false;
+      break;
+    }
+  }
+}
+
+if (isPrime) {
+  alert(`${num} is a prime number.`);
+} else {
+  alert(`${num} is not a prime number.`);
+}
+
+    </script>
+  </body>
+  <p id="h1"></p>
+
+</html>

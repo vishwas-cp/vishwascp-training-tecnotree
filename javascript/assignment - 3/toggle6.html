@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Toggle Background Color</title>
+  </head>
+  <body>
+    <p>This is a paragraph.</p>
+    <button id="myButton">Toggle Color</button>
+
+    <script>
+      var button = document.getElementById("myButton");
+      var body = document.body;
+
+      button.addEventListener("click", function() {
+        body.style.backgroundColor = body.style.backgroundColor == "yellow" ? "red" : "yellow";
+      });
+    </script>
+  </body>
+</html>

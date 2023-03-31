@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isLeapYear(year) {
+  // A year is a leap year if it is divisible by 4, but not by 100
+  // Or if it is divisible by both 4 and 400
+  if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// Example usage:
+let year = 2023;
+if (isLeapYear(year)) {
+  alert(year + ' is a leap year');
+} else {
+  alert(year + ' is not a leap year');
+}
+
+    </script>
+</body>
+</html>

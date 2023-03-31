@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Button Event Listener Example</title>
+  </head>
+  <body>
+    <p>This is a paragraph.</p>
+    <button id="myButton">Click me</button>
+
+    <script>
+      var button2 = document.createElement("button");
+      button2.innerHTML = "Button 2";
+      document.body.appendChild(button2);
+
+      button2.addEventListener("click", function() {
+        alert("Button 2 clicked");
+      });
+    </script>
+  </body>
+</html>

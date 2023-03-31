@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+let side1 = 5;
+let side2 = 6;
+let side3 = 7;
+
+let semiperimeter = (side1 + side2 + side3) / 2;
+let area = Math.sqrt(semiperimeter * (semiperimeter - side1) * (semiperimeter - side2) * (semiperimeter - side3));
+
+alert("The area of the triangle is: " + area.toFixed(2));
+
+    </script>
+</body>
+</html>

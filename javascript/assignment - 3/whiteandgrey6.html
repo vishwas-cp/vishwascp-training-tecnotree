@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Toggle Background Color Example</title>
+    <style>
+      body {
+        background-color: white;
+      }
+      .gray {
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <p>This is a paragraph.</p>
+    <button id="myButton">Click me</button>
+
+    <script>
+      var button2 = document.createElement("button");
+      button2.textContent = "Toggle Color";
+      document.body.appendChild(button2);
+
+      button2.addEventListener("click", function() {
+        var body = document.querySelector("body");
+        body.classList.toggle("gray");
+      });
+    </script>
+  </body>
+</html>

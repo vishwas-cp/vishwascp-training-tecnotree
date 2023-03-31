@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Button and Paragraph</title>
+  </head>
+  <body>
+    <p id="demo">This is a paragraph tag</p>
+    <button onclick="displayContent()">Display content</button>
+    <div id="contentDisplay"></div>
+
+    <script>
+      function displayContent() {
+        var content = document.getElementById("demo").textContent;
+        document.getElementById("contentDisplay").textContent = content;
+      }
+    </script>
+  </body>
+</html>
